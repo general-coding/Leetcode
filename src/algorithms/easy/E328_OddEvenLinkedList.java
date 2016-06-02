@@ -1,9 +1,5 @@
 package algorithms.easy;
 
-import java.util.Arrays;
-
-import algorithms.easy.ReverseLinkedList.ListNode;
-
 /**
  * @author Puneeth U Bharadwaj
  * 
@@ -20,7 +16,7 @@ import algorithms.easy.ReverseLinkedList.ListNode;
  *
  */
 
-public class OddEvenLinkedList {
+public class E328_OddEvenLinkedList {
 	public class ListNode {
 		int val;
 		ListNode next;

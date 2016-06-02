@@ -16,7 +16,7 @@ package algorithms.easy;
  *
  */
 
-public class MoveZeroes {
+public class E283_MoveZeroes {
 
 	public void moveZeroes(int[] nums) {
 		// int[] num = new int[] { 0, 1, 0, 3, 12 };
@@ -36,7 +36,7 @@ public class MoveZeroes {
 	}
 
 	public static void main(String[] args) {
-		new MoveZeroes().moveZeroes(new int[] { 0, 1, 0, 3, 12 });
+		new E283_MoveZeroes().moveZeroes(new int[] { 0, 1, 0, 3, 12 });
 	}
 
 }

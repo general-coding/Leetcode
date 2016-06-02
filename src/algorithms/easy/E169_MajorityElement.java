@@ -1,8 +1,6 @@
 package algorithms.easy;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
 
 /**
  * @author Puneeth U Bharadwaj
@@ -17,7 +15,7 @@ import java.util.HashMap;
  *
  */
 
-public class MajorityElement {
+public class E169_MajorityElement {
 	public int majorityElement(int[] nums) {
 		Arrays.sort(nums);
 
@@ -42,7 +40,7 @@ public class MajorityElement {
 
 	public static void main(String[] args) {
 		int[] nums = { -1, 100, 2, 100, 100, 4, 100 };
-		System.out.println(new MajorityElement().majorityElement(nums));
+		System.out.println(new E169_MajorityElement().majorityElement(nums));
 	}
 
 }

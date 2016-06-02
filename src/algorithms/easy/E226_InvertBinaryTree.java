@@ -19,7 +19,7 @@ package algorithms.easy;
  *
  */
 
-public class InvertBinaryTree {
+public class E226_InvertBinaryTree {
 	public class TreeNode {
 		int val;
 		TreeNode left;

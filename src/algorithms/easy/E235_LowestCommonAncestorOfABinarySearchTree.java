@@ -16,7 +16,7 @@ package algorithms.easy;
  *
  */
 
-public class LowestCommonAncestorOfABinarySearchTree {
+public class E235_LowestCommonAncestorOfABinarySearchTree {
 
 	public class TreeNode {
 		int val;

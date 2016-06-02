@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  */
 
-public class ValidAnagram {
+public class E242_ValidAnagram {
 	public boolean isAnagram(String s, String t) {
 		char as[] = s.toCharArray();
 		char at[] = t.toCharArray();
@@ -42,7 +42,7 @@ public class ValidAnagram {
 		String s = "ab<";
 		String t = "b<a";
 
-		System.out.println(new ValidAnagram().isAnagram(s, t));
+		System.out.println(new E242_ValidAnagram().isAnagram(s, t));
 	}
 
 }

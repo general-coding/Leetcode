@@ -13,7 +13,7 @@ import java.util.HashMap;
  *
  */
 
-public class RomanToInteger {
+public class E013_RomanToInteger {
 
 	public int romanToInt(String s) {
 		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
@@ -39,7 +39,7 @@ public class RomanToInteger {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new RomanToInteger().romanToInt("XXI"));
+		System.out.println(new E013_RomanToInteger().romanToInt("XXI"));
 	}
 
 }

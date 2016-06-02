@@ -14,7 +14,7 @@ package algorithms.easy;
  *
  */
 
-public class DeleteNodeInALinkedList {
+public class E237_DeleteNodeInALinkedList {
 	public class ListNode {
 		int val;
 		ListNode next;

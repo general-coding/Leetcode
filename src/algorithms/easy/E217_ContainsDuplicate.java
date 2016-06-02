@@ -15,7 +15,7 @@ import java.util.Set;
  *
  */
 
-public class ContainsDuplicate {
+public class E217_ContainsDuplicate {
 	public boolean containsDuplicate(int[] nums) {
 		Set<Integer> set = new HashSet<Integer>();
 
@@ -29,7 +29,7 @@ public class ContainsDuplicate {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new ContainsDuplicate().containsDuplicate(new int[] { 0, 1, 0, 3, 12 }));
+		System.out.println(new E217_ContainsDuplicate().containsDuplicate(new int[] { 0, 1, 0, 3, 12 }));
 	}
 
 }

@@ -14,7 +14,7 @@ package algorithms.easy;
  *
  */
 
-public class ExcelSheetColumnNumber {
+public class E171_ExcelSheetColumnNumber {
 	public int titleToNumber(String s) {
 		int num = 0;
 		for(int i=0;i<s.length();i++){
@@ -25,7 +25,7 @@ public class ExcelSheetColumnNumber {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new ExcelSheetColumnNumber().titleToNumber("XFD"));
+		System.out.println(new E171_ExcelSheetColumnNumber().titleToNumber("XFD"));
 	}
 
 }

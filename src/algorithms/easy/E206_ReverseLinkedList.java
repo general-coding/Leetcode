@@ -9,7 +9,7 @@ package algorithms.easy;
  *
  */
 
-public class ReverseLinkedList {
+public class E206_ReverseLinkedList {
 
 	public class ListNode {
 		int val;

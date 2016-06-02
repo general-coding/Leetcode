@@ -16,7 +16,7 @@ package algorithms.easy;
  * 
  */
 
-public class AddDigits {
+public class E258_AddDigits {
 	public int addDigits(int num) {
 		if (num == 0) {
 			return 0;
@@ -28,6 +28,6 @@ public class AddDigits {
 	}
 
 	public static void main(String args[]) {
-		System.out.println(new AddDigits().addDigits(0));
+		System.out.println(new E258_AddDigits().addDigits(0));
 	}
 }
