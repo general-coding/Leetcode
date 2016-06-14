@@ -1,4 +1,4 @@
-package algorithms.easy;
+package algorithms.medium;
 
 /**
  * @author Puneeth U Bharadwaj
