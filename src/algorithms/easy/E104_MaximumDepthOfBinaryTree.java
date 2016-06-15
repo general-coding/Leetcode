@@ -12,6 +12,7 @@ package algorithms.easy;
  */
 
 public class E104_MaximumDepthOfBinaryTree {
+	
 	class TreeNode {
 		int val;
 		TreeNode left;

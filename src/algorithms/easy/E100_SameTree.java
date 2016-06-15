@@ -14,7 +14,8 @@ package algorithms.easy;
  */
 
 public class E100_SameTree {
-	public class TreeNode {
+	
+	class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;

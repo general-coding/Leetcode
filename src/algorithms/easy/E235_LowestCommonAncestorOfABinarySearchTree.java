@@ -18,7 +18,7 @@ package algorithms.easy;
 
 public class E235_LowestCommonAncestorOfABinarySearchTree {
 
-	public class TreeNode {
+	class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;

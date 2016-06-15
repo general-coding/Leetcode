@@ -1,7 +1,5 @@
 package algorithms.medium;
 
-import java.util.HashMap;
-
 /**
  * @author Puneeth U Bharadwaj
  * 

@@ -17,7 +17,8 @@ package algorithms.medium;
  */
 
 public class E328_OddEvenLinkedList {
-	public class ListNode {
+	
+	class ListNode {
 		int val;
 		ListNode next;
 

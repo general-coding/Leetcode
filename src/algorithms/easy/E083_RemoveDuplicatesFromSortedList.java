@@ -1,8 +1,5 @@
 package algorithms.easy;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * @author Puneeth U Bharadwaj
  * 
