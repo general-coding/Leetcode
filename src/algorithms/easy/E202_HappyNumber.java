@@ -23,29 +23,30 @@ import java.util.HashSet;
  */
 
 public class E202_HappyNumber {
-
-	public boolean isHappy(int n) {
-		HashSet<Integer> hashSet = new HashSet<Integer>();
-		int sum = 0;
-
-		while (!hashSet.contains(sum)) {
-			hashSet.add(sum);
-			sum = 0;
-			while (n > 0) {
-				sum = (int) (sum + Math.pow(n % 10, 2));
-				n = n / 10;
-			}
-			System.out.println(sum);
-
-			if (sum == 1) {
-				return true;
-			}
-
-			n = sum;
-		}
-
-		return false;
-	}
+	    public boolean isHappy(int n) {
+	        //fast and slow pointer method is used
+	        int slow = n;
+	        int fast = n;
+	
+	        do{
+	    		slow = doSquareOfDigits(slow);
+	            	fast = doSquareOfDigits(doSquareOfDigits(fast));
+	        }while(slow != fast);
+	
+	        if(slow == 1) return true;
+	        
+	        return false;
+	    }
+	
+	    public int doSquareOfDigits(int number){
+	        int ans = 0;
+	        while(number>0){
+	    		int rem = number%10;
+	            	ans += rem*rem;
+	            	number = number/10;
+	        }
+	        return ans;
+	    }
 
 	public static void main(String[] args) {
 		System.out.println(new E202_HappyNumber().isHappy(2));
