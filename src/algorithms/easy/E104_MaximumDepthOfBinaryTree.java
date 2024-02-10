@@ -25,20 +25,14 @@ public class E104_MaximumDepthOfBinaryTree {
 	}
 
 	public int maxDepth(TreeNode root) {
-		int depthLeft = 1;
-		int depthRight = 1;
-
-		if (root == null) {
-			return 0;
-		} else {
-			if (root.left != null) {
-				depthLeft = maxDepth(root.left) + 1;
-			}
-			if (root.right != null) {
-				depthRight = maxDepth(root.right) + 1;
-			}
-			return (depthLeft > depthRight) ? depthLeft : depthRight;
-		}
+		if (root == null)
+	        {
+	            return 0;
+	        }
+	        else 
+	        {
+	            return Math.Max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
+	        }
 	}
 
 	// public static void main(String[] args) {
