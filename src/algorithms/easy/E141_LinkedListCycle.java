@@ -24,27 +24,14 @@ public class E141_LinkedListCycle {
 	}
 
 	public boolean hasCycle(ListNode head) {
-		ListNode node1 = head;
-		ListNode node2 = head;
-
-		if (head != null && head.next != null) {
-			node2 = head.next;
-		} else {
-			return false;
-		}
-
-		while (node1 != null && node2 != null) {
-			if (node1.val == node2.val)
-				return true;
-
-			node1 = node1.next;
-			node2 = node2.next;
-			if (node2 != null) {
-				node2 = node2.next;
-			}
-		}
-
-		return false;
+	        ListNode fast = head, slow = head;
+	        while (fast != null && fast.next != null)
+	        {
+	            fast = fast.next.next;
+	            slow = slow.next;
+	            if (fast == slow) return true;
+	        }
+	        return false;
 	}
 
 	public static void main(String[] args) {
