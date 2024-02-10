@@ -15,26 +15,20 @@ package algorithms.easy;
 public class E070_ClimbingStairs {
 
 	public int climbStairs(int n) {
-		if (n <= 2) {
-			return n;
-		}
-
-		int ways = climbStairs(n - 1) + climbStairs(n - 2);
-
-		return ways;
-	}
-
-	public int climbStairs2(int n) {
-		if (n < 3) {
-			return n;
-		}
-		int step1 = 1;
-		int step2 = 2;
-		for (int i = 3; i <= n; i++) {
-			step2 = step1 + step2;
-			step1 = step2 - step1;
-		}
-		return step2;
+		if (n == 1) 
+	        {
+	            return 1;
+	        }
+	        int first = 1;
+	        int second = 2;
+	        int output = second;
+	        for (int i = 3; i <= n; i++) 
+	        {
+	            output = first + second;
+	            first = second;
+	            second = output;
+	        }
+	        return output;
 	}
 
 	public static void main(String[] args) {
