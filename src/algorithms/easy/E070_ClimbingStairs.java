@@ -19,16 +19,14 @@ public class E070_ClimbingStairs {
 	        {
 	            return 1;
 	        }
-	        int first = 1;
-	        int second = 2;
-	        int output = second;
+	        int[] dp = new int[n + 1];
+	        dp[1] = 1;
+	        dp[2] = 2;
 	        for (int i = 3; i <= n; i++) 
 	        {
-	            output = first + second;
-	            first = second;
-	            second = output;
+	            dp[i] = dp[i - 1] + dp[i - 2];
 	        }
-	        return output;
+	        return dp[n];
 	}
 
 	public static void main(String[] args) {
