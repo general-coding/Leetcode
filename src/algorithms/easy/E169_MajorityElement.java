@@ -17,25 +17,8 @@ import java.util.Arrays;
 
 public class E169_MajorityElement {
 	public int majorityElement(int[] nums) {
-		Arrays.sort(nums);
-
-		int curr = 0;
-		int currval = nums[0];
-
-		for (int i : nums) {
-			if (i == currval) {
-				curr++;
-			} else {
-				curr--;
-			}
-
-			if (curr == 0) {
-				currval = i;
-				curr = 1;
-			}
-		}
-
-		return currval;
+	        Array.Sort(nums);
+	        return nums[nums.Length / 2];
 	}
 
 	public static void main(String[] args) {
